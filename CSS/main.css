@@ -1,8 +1,109 @@
 @font-face {
     font-family: 'JetBrains Mono';
-    src: url(../fonts/JetBrainsMono/JetBrainsMono-Regular.ttf);
+    src: url('/fonts/JetBrainsMono/JetBrainsMono-Regular.ttf') format('truetype');
 }
 
-*{
-    font-family: 'JetBrains Mono', monospace;
+:root {
+    /* Background Colors */
+    --background: #1a1b1e;  /* Dark background color */ 
+}
+
+* {
+    font-family: 'JetBrains Mono', sans-serif;
+    background-color: var(--background);
+    color: white;
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Reset default list styles and remove underlines from links */
+ul, li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Add hover effect to links */
+a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Style the header */
+#navbar {
+    /* Background and text color settings here */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px; /* Adjust padding as needed */
+    border-bottom: 1px solid white;
+}
+
+/* Style the left side of the header */
+#navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+/* Style the navigation links */
+#navbar nav ul {
+    display: flex;
+}
+
+#navbar nav li {
+    margin-right: 20px; /* Adjust spacing between links */
+}
+
+/* Style the right side of the header */
+#navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+/* Style the subscribe button */
+button {
+    /* Button background and text color settings here */
+    border: none;
+    padding: 10px 20px; /* Adjust padding as needed */
+    cursor: pointer;
+}
+
+h1 {
+    text-align: center;
+    margin: 50px 0;
+}
+
+h2 {
+    padding: 20px 0 20px 0;
+    font-size: xx-large;
+}
+
+main {
+    padding: 0 10vw 0 10vw;
+    flex: 1;
+}
+
+h3 {
+    padding: 10px 0 10px 0;
+    font-size: larger;
+}
+
+article {
+    padding: 30px 0 20px 0;
+}
+
+#contact-footer { 
+    border-top: 1px solid white;
 }

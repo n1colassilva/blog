@@ -6,11 +6,30 @@
 			name="viewport"
 			content="width=device-width, initial-scale=1.0" />
 		<title>Nick's blog</title>
+		<link
+			rel="stylesheet"
+			href="/CSS/main.css" />
 	</head>
 	<body>
+		<header id="navbar">
+			<div id="navbar-left">
+				<p>logo</p>
+				<nav>
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">About</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div id="navbar-right">
+				<a href="#">Contact</a>
+				<button>Subscribe</button>
+			</div>
+		</header>
 		<h1>Bloge 🗣️</h1>
 		<main>
-			<div id="new">
+			<div id="new-posts">
 				<h2>New posts</h2>
 				<p>total: 01</p>
 				<ul>
@@ -34,7 +53,7 @@
 				<h2>Best posts</h2>
 			</div>
 		</main>
-		<footer>
+		<footer id="contact-footer">
 			<h2>Contact me!</h2>
 			<address>
 				<p>email@mailface.com</p>
